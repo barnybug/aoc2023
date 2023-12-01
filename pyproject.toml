@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "aoc2023"
+version = "0.1.0"
+description = ""
+authors = ["Barnaby Gray <barnybug@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytest = "*"
+ruff = "*"
+numpy = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+day = "aoc2023.run:run"
