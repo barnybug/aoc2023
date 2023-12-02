@@ -11,7 +11,7 @@ LOOKUP = {n: i + 1 for i, n in enumerate(NUMBERS.split("|"))} | {
 
 def solution(lines, regex):
     matches = [regex.findall(line) for line in lines]
-    return sum(LOOKUP[match[0]] * 10 + LOOKUP[match[-1]] for match in matches)
+    return sum(LOOKUP[match[0]] * 10 + LOOKUP[match[-1]] for match in matches if match)
 
 
 def solve(input: str):
