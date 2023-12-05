@@ -14,8 +14,10 @@ from aoc2023 import day$day
 
 testdata = open("tests/input$day.txt").read()
 
+
 def test_01():
     assert day$day.solve(testdata).part1 == None
+
 
 def test_02():
     assert day$day.solve(testdata).part2 == None
