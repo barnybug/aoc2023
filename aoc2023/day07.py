@@ -13,15 +13,7 @@ class Hand:
 
 
 def card_values(hand, most, second, values):
-    handtype = {
-        (5, 0): 6,
-        (4, 1): 5,
-        (3, 2): 4,
-        (3, 1): 3,
-        (2, 2): 2,
-        (2, 1): 1,
-        (1, 1): 0,
-    }[(most, second)]
+    handtype = most * 3 + second
     return [handtype] + [values[c] for c in hand.cards]
 
 
