@@ -1,7 +1,9 @@
 #!/bin/bash
 
-day=$(date +%02d)
-sday=$(date +%1d)
+today=$(date +%02d)
+stoday=$(date +%1d)
+day="${1:-$today}"
+sday="${1:-$stoday}"
 testinput="tests/input$day.txt"
 input="aoc2023/inputs/input$day.txt" 
 daycode="aoc2023/day$day.py"
