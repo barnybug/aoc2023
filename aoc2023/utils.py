@@ -85,6 +85,12 @@ Point.U = Point(0, -1)
 Point.D = Point(0, 1)
 Point.R = Point(1, 0)
 Point.Dirs = [Point.L, Point.U, Point.D, Point.R]
+D_to_P = {
+    "R": Point.R,
+    "L": Point.L,
+    "U": Point.U,
+    "D": Point.D,
+}
 Point.Zero = Point(0, 0)
 
 
